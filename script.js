@@ -2,7 +2,7 @@ const $ = selector => document.querySelector(selector)
 const $table = $('#table')
 const $file = document.getElementById('file1');
 
-const $SenFiles = document.getElementById('formSendFiles');
+ 
 
 
 const $submit = $('#submit')
@@ -11,13 +11,8 @@ const $results = $('#results')
 const $buttonCreateFile = document.getElementById('createFile');
 const $buttonUpdateFile = document.getElementById('updateFile');
 const $buttonDeleteFile = document.getElementById('deleteFile');
-let files;
-$SenFiles.addEventListener('click', () => {
-    event.preventDefault()
-    files = this.files
-    console.log(files)
-});
-
+ 
+ 
 $buttonCreateFile.addEventListener('click', () => {
     /*hola*/
     Swal.fire({
